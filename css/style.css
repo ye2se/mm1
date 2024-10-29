@@ -1,0 +1,74 @@
+#header {}
+
+#header .ht {
+    padding: 3.2rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+#header .ht h1 a img {
+    height: 3.8rem;
+}
+
+#header .hb {
+    position: relative;
+    padding: 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .hb .gnb>ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 4rem;
+}
+
+#header .hb .gnb>ul>li {
+    position: relative;
+}
+
+#header .hb .gnb>ul>li>a {
+    display: block;
+    line-height: 6.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#header .hb .gnb>ul>li:hover>a {
+    border-bottom: 1px solid #333;
+}
+
+#header .hb .gnb>ul>li ul {
+    display: none;
+    position: absolute;
+    top: 6.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+
+    background: #fff;
+    white-space: nowrap;
+}
+
+#header .hb .gnb>ul>li:hover ul {
+    display: block;
+}
+
+#header .hb .gnb>ul>li:hover ul>li>a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+
+    font-size: 14px;
+}
+
+#header .hb .utils {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
